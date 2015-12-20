@@ -54,10 +54,13 @@ public class EventListener implements Listener {
 
     @EventHandler
     public void InventoryClick(InventoryClickEvent e) {
+        if(e.getClickedInventory().getName().equalsIgnoreCase("§5-=§c锻造台§5=-")){
+            if(e.getSlot()==0||e.getSlot()==8){
+                e.setCancelled(true);
+            }
 
-        if (e.getInventory().getName().equalsIgnoreCase("§5-=§c锻造台§5=-")) {
-            e.setCancelled(true);
         }
+
     }
 
     @EventHandler
@@ -70,12 +73,12 @@ public class EventListener implements Listener {
 
     @EventHandler
     public void PlayerPlaceBlock(BlockPlaceEvent e) {
-        Player p=e.getPlayer();
+        Player p = e.getPlayer();
         if (e.getBlock().getType() == Material.FURNACE) {
             if (e.getBlock().getLocation().add(0, 1, 0).getBlock().getType() == Material.ANVIL) {
                 p.sendMessage("§a你成功放置了一个锻造台!");
             }
-        }else if(e.getBlock().getType() == Material.ANVIL){
+        } else if (e.getBlock().getType() == Material.ANVIL) {
             if (e.getBlock().getLocation().add(0, -1, 0).getBlock().getType() == Material.FURNACE) {
                 p.sendMessage("§a你成功放置了一个锻造台!");
 
