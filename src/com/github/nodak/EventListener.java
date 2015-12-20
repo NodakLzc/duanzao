@@ -82,6 +82,10 @@ public class EventListener implements Listener {
                 p.sendMessage("§a你成功放置了一个锻造台!");
                 p.sendMessage("§a你成功放置了一个锻造台!");
                 p.sendMessage("§a你成功放置了一个锻造台!");
+                p.sendMessage("§a你成功放置了一个锻造台!");
+                p.sendMessage("§a你成功放置了一个锻造台!");
+                p.sendMessage("§a你成功放置了一个锻造台!");
+                p.sendMessage("§a你成功放置了一个锻造台!");
 
             }
         }
