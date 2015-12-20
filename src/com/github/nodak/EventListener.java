@@ -73,11 +73,15 @@ public class EventListener implements Listener {
         Player p=e.getPlayer();
         if (e.getBlock().getType() == Material.FURNACE) {
             if (e.getBlock().getLocation().add(0, 1, 0).getBlock().getType() == Material.ANVIL) {
-                p.sendMessage("§a你成功放置了一个锻造台");
+                p.sendMessage("§a你成功放置了一个锻造台!");
             }
         }else if(e.getBlock().getType() == Material.ANVIL){
             if (e.getBlock().getLocation().add(0, -1, 0).getBlock().getType() == Material.FURNACE) {
-                p.sendMessage("§a你成功放置了一个锻造台");
+                p.sendMessage("§a你成功放置了一个锻造台!");
+                p.sendMessage("§a你成功放置了一个锻造台!");
+                p.sendMessage("§a你成功放置了一个锻造台!");
+                p.sendMessage("§a你成功放置了一个锻造台!");
+
             }
         }
     }
