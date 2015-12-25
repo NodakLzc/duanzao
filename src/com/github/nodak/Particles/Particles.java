@@ -14,7 +14,6 @@ import java.util.Set;
 public class Particles extends BukkitRunnable  implements Listener{
     Main main;
     EventListener e=new EventListener(main);
-    Set<Block> block=e.map.keySet();
 
     public void run() {
         System.out.print(block);
